@@ -1,0 +1,122 @@
+body{
+    font-family: fantasy;
+    margin: 0;
+    background-color: #7cdaf9;
+}
+
+a{
+    color: white;
+}
+
+header{
+    min-height: 70px;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.icono {
+    display: flex;
+    align-items: center;
+}
+
+.icono img{
+    height: 200px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 500;
+    padding-right: 200px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #7cdaf9;
+}
+
+@media(max-width: 680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0rem;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(linkedin.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    margin-top: 30px;
+}
+
+.social-icon:hover{
+    background-color: red;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(wsp.png);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(github.png);
+}
+
+.social-icon:nth-of-type(4){
+    background-image: url(telegram.png);
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: white;
+    opacity: 0.3;
+    text-align: center;
+    margin-bottom: 10px;
+}
